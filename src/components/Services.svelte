@@ -3,38 +3,39 @@
     {
       icon: 'fas fa-utensil-spoon',
       title: 'super good food',
-      text: 'Qui cillum aliqua anim cillum qui dolore eiusmod consequat do.'
+      text: 'Qui cillum aliqua anim cillum qui dolore eiusmod consequat do.Velit in voluptate veniam eiusmod et consectetur voluptate labore.Ex laborum consectetur dolore excepteur.'
     },
     {
       icon: 'fas fa-truck',
       title: 'food deliveries',
-      text: 'Dolore quis pariatur aute ullamco. Qui cillum aliqua anim cillum'
+      text: 'Dolore quis pariatur aute ullamco. Qui cillum aliqua anim cillumId deserunt voluptate pariatur et.Ad incididunt do qui aliquip amet deserunt minim officia nulla est veniam.'
     },
     {
       icon: 'fas fa-location-arrow',
       title: 'anytime anywhere',
-      text: 'Cillum labore id eiusmod et dolor consequat magna ex enim anim a.'
+      text: 'Cillum labore id eiusmod et dolor consequat magna ex enim anim a.Labore Lorem pariatur nulla adipisicing in velit duis dolore quis.Velit ipsum velit ea id qui eiusmod.'
     }
   ]
 </script>
 
 <style>
 .container{
-  margin: 3rem;
-  padding: 2rem 3rem;
+  font-family: 'andika';
+  margin: 1.5rem;
+  padding: 1rem .2rem;
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: .5rem;
 }
 
 .service{
   display: flex;
-  color: maroon;
+  color: darkslategray;
   border-radius: .7rem;
+  padding: 0 .5rem;
   --box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
-  box-shadow: var(--box-shadow);
   transition: all .2s linear;
   justify-content: center;
   align-items: center;
@@ -43,13 +44,12 @@
 
 .service:hover{
  
-  background: maroon;
-  color: white;
+  background: #fff
 }
 
 .service:hover .circle{
-  background: #fff;
-  color: maroon;
+  background: maroon;
+  color: #fff;
 }
 
 .circle{
@@ -63,15 +63,13 @@
   margin: 1rem 0;
   transition: all .2s ease;
   border-radius: 50%;
-  background: maroon;
-  color: white
+  background: transparent;
+  color: maroon;
 }
 
-.circle:hover{
-  background: #fff;
-  color: maroon;
+/* .circle:hover{
   border: maroon 1px solid;
-}
+} */
 
 @media screen and (max-width: 670px){
   .container{
@@ -86,18 +84,19 @@
   text-transform: capitalize;
   text-align: center;
   font-size: 1.4rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .service h5{
-  font-size: 1.2rem;
+  font-size: 1rem !important;
+  text-align: left
 }
 
 h2.title{
   font-size: 2.5rem;
   border-bottom: 5px solid maroon;
   padding: 1rem 0;
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: max-content
 }
 </style>

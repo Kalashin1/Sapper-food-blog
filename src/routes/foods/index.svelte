@@ -27,8 +27,8 @@
 
   .food{
     display: grid;
-    padding: 1rem 1rem;
-    grid-template-columns: 1fr 3fr;
+    padding: 1rem 8rem;
+    grid-template-columns: 1fr;
     grid-gap: 2%
   }
 
@@ -46,24 +46,21 @@
     object-fit: cover;
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 670px){
     .main{
       grid-template-columns: 1fr !important;
     }
     .food{
       grid-template-columns: 1fr !important;
+      padding: 1rem 2rem !important
     }
   }
 
-  @media screen and (min-width: 480px) and (max-width: 670px){
-    .main{
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
 
   @media screen and (min-width: 670px)and (max-width: 1000px){
     .food{
-      grid-template-columns: 1fr 2fr !important;
+      grid-template-columns: 1fr !important;
+      padding: 1rem 2rem !important
     }
   } 
 

@@ -1,29 +1,35 @@
 <script>
     export let segment
-    let handleClick = ()=> {
-		console.log(segment)
-	}
+    
 </script>
-
-<footer>
-    <div on:click={handleClick}>
-        &copy; 2020 Kala-Jobs
-    </div>
+{#if segment !=='foods'}
+<footer class="footer">
+  <div>
+    <p>&copy; 2021 Kalashin</p>
+  </div>
 </footer>
+{/if}
 
 <style>
-  footer{
-    padding: 1rem 6rem;
+  .footer{
+    background:transparent;
+    font-family: 'andika';
+    color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  footer div{
-    text-align: center;
-    font-weight: bold;
-    width: 20%;
-    padding: 1rem;
-    color: #333;
-    border-top: 2px solid #f2f2f2
+
+
+@media screen and (max-width: 670px){
+  .footer p{
+    width: 100% !important
+  }
+}
+  .footer p{
+    border-top: 1px solid gray;
+    padding-top: 5px;
+    width: 200%;
+    text-align: center
   }
 </style>

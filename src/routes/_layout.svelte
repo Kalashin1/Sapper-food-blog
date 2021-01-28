@@ -14,4 +14,4 @@
 	<slot></slot>
 </main>
 
-<!-- <Footer {segment} /> -->
+<Footer {segment} />
