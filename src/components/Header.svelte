@@ -1,70 +1,43 @@
-<style>
-  .header{
-    background: url(/images/shallow-focus-photography-of-several-pizzas-1566837.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 110vh;
-    font-family: 'andika';
-    color: #fff;
-    top: -3.5rem;
-    position: relative;
-  }
+<script>
+  export let segment
+</script>
 
-  .header::after{
-    content: '';
-    position: absolute;
-    top: 0;left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0, 0,0.3);
-  }
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
 
-  .header-text{
-    position: absolute;
-    top: 65%;
-    text-align: center;
-    transform: translateY(-50%);
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  }
+    <h1 class="logo"><a href="index.html">Kalashin</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-  .header-text h2{
-    font-weight: bold;
-    font-size: 3rem;
-  }
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#services">Services</a></li>
+        <li><a class="nav-link scrollto " href="#work">Work</a></li>
+        <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+        <!-- <li class="dropdown"><a href="!#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="!#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="!#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="!#">Deep Drop Down 1</a></li>
+                <li><a href="!#">Deep Drop Down 2</a></li>
+                <li><a href="!#">Deep Drop Down 3</a></li>
+                <li><a href="!#">Deep Drop Down 4</a></li>
+                <li><a href="!#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="!#">Drop Down 2</a></li>
+            <li><a href="!#">Drop Down 3</a></li>
+            <li><a href="!#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
 
-  .header-text a{
-    background: rgb(3, 121, 19);
-    padding: 18px 48px;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: bold;
-    outline: 0;
-    color: rgb(235, 231, 231);
-    font-weight: bold;
-    font-size: 1.3rem;
-    border: 0;
-    cursor: pointer;
-    border-radius: .7rem;
-  }
-
-  /* .header-text button i, .header-text button span {
-    display : inline-block;
-    margin: 0 1rem
-  } */
-</style>
-
-<div class="header">
-  <div class="header-text">
-    <h2>Welcome to the home of the best foods</h2>
-    <a href="/">
-      <span>Order A Meal</span>
-      <!-- <i class="fas fa-shopping-cart"></i> -->
-    </a>
   </div>
-</div>
+</header><!-- End Header -->

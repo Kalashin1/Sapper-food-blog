@@ -1,6 +1,7 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-	import Footer from '../components/Footer.svelte'
+import Header from "../components/Header.svelte";
+import Footer from "../components/Footer.svelte"
+
 	export let segment;
 </script>
 
@@ -8,10 +9,11 @@
   
 </style>
 
-<Nav {segment} />
+<Header {segment} />
 
 <main>
 	<slot></slot>
 </main>
 
+<!-- svelte-ignore missing-declaration -->
 <Footer {segment} />
