@@ -6,13 +6,15 @@
   import Testimonials from '../components/Testimonials.svelte'
   import BlogPosts from '../components/BlogPosts.svelte'
   import Contact from '../components/Contact.svelte'
+
+  import { services, projects } from './_data.json.js'
 </script>
 
 <HeroSection />
 <main id="main">
   <About />
-  <Services />
-  <Portfolio />
+  <Services  {services} />
+  <Portfolio {projects} />
   <Testimonials />
   <BlogPosts />
   <Contact />
